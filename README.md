@@ -1,12 +1,15 @@
 # Hello
 I'm Harsha!
 
-I'm a PhD student learning and researching about **machine learning**, **signal processing**, **speech technology**, **conversational AI**, and **LLM applications**. My work focuses on conversational AI.
+As a PhD student, I'm researching enchronic speech dynamics using self-supervised learning and I also work on bias discovery/mitigation in conversational AI.
+
+I'm supervised by Éva Székely and Gustav Eje Henter. My research is also supported by the WASP program.
 
 ## Current Research
 I'm exploring **enchronic speech dynamics** using **self-supervised learning** and working on **bias detection in conversational AI**. Enchrony involves studying:
-- How quickly we respond in conversations.
+- How quickly we respond in conversations/Turn-taking.
 - How we co-create meaning with our conversation partners.
+- The social rules of conversation including slang, inside jokes etc.
 - Other real-time interaction dynamics.
 
 My goal is to uncover insights that advance our understanding of human communication and improve conversational AI systems.
