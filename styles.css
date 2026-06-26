@@ -124,8 +124,8 @@ button:focus-visible,
 
 .hero {
   background:
-    linear-gradient(90deg, rgba(248, 250, 252, 0.96) 0%, rgba(248, 250, 252, 0.86) 55%, rgba(248, 250, 252, 0.54) 100%),
-    linear-gradient(0deg, rgba(248, 250, 252, 0.9), rgba(248, 250, 252, 0.24)),
+    linear-gradient(90deg, rgba(248, 250, 252, 0.88) 0%, rgba(248, 250, 252, 0.64) 55%, rgba(248, 250, 252, 0.28) 100%),
+    linear-gradient(0deg, rgba(248, 250, 252, 0.62), rgba(248, 250, 252, 0.12)),
     url("assets/hero-backdrop.jpg") center / cover no-repeat;
   border-bottom: 1px solid var(--line);
   color: var(--ink);
