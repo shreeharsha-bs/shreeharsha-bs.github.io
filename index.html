@@ -15,8 +15,8 @@
     >
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://shreeharsha-bs.github.io/">
-    <meta property="og:image" content="https://shreeharsha-bs.github.io/assets/speech-dynamics-hero.jpg">
-    <meta name="theme-color" content="#0d1b2a">
+    <meta property="og:image" content="https://shreeharsha-bs.github.io/assets/shree-harsha.jpg">
+    <meta name="theme-color" content="#f8fafc">
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
   </head>
@@ -29,8 +29,8 @@
         <div class="nav-links">
           <a href="#about">About</a>
           <a href="#research">Research</a>
-          <a href="#projects">Projects</a>
           <a href="#publications">Publications</a>
+          <a href="#background">Background</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
@@ -38,36 +38,32 @@
 
     <main id="main">
       <section class="hero" id="top" aria-labelledby="hero-title">
-        <img
-          class="hero-image"
-          src="assets/speech-dynamics-hero.jpg"
-          alt="Abstract speech waveform and spectrogram visual representing speech dynamics research."
-        >
-        <div class="hero-overlay"></div>
         <div class="hero-content container">
-          <p class="eyebrow">PhD student · Speech technology · Conversational AI</p>
-          <h1 id="hero-title">Shree Harsha</h1>
-          <p class="hero-lede">
-            I research speech interaction dynamics, SpeechLLM evaluation, and
-            responsible conversational AI.
-          </p>
-          <p class="hero-note">
-            My current work studies enchronic speech dynamics with self-supervised
-            learning, voice-based bias evaluation, and failure modes in speech
-            foundation models. I am supervised by Éva Székely and Gustav Eje Henter,
-            supported by the WASP program, and based at KTH Royal Institute of
-            Technology.
-          </p>
-          <div class="cta-row" aria-label="Research links">
-            <a href="#publications">Publications</a>
-            <a href="https://scholar.google.com/citations?hl=en&amp;user=6HZaQggAAAAJ&amp;view_op=list_works">
-              Google Scholar
-            </a>
-            <a href="#projects">Projects</a>
-            <a href="https://github.com/shreeharsha-bs" rel="me">GitHub</a>
-            <a href="https://shreeharsha-bs.github.io/interspeech-voice-behind-words-website/">
-              Voice Behind the Words
-            </a>
+          <figure class="hero-portrait">
+            <img src="assets/shree-harsha.jpg" alt="Portrait of Shree Harsha.">
+            <figcaption>PhD student at KTH Royal Institute of Technology.</figcaption>
+          </figure>
+          <div class="hero-copy">
+            <p class="eyebrow">PhD student · Speech technology · Conversational AI</p>
+            <h1 id="hero-title">Shree Harsha</h1>
+            <p class="hero-lede">
+              I research speech interaction dynamics, SpeechLLM evaluation, and
+              responsible conversational AI.
+            </p>
+            <p class="hero-note">
+              My current work studies enchronic speech dynamics with self-supervised
+              learning, voice-based bias evaluation, and failure modes in speech
+              foundation models. I am supervised by Éva Székely and Gustav Eje Henter,
+              supported by the WASP program, and based at KTH Royal Institute of
+              Technology.
+            </p>
+            <div class="cta-row" aria-label="Research links">
+              <a href="#publications">Publications</a>
+              <a href="https://scholar.google.com/citations?hl=en&amp;user=6HZaQggAAAAJ&amp;view_op=list_works">
+                Google Scholar
+              </a>
+              <a href="https://github.com/shreeharsha-bs" rel="me">GitHub</a>
+            </div>
           </div>
         </div>
       </section>
@@ -76,7 +72,7 @@
         <div class="container two-column">
           <div>
             <p class="section-kicker">About</p>
-            <h2 id="about-title">Speech as interaction, not just signal.</h2>
+            <h2 id="about-title">Research Focus</h2>
           </div>
           <div class="prose">
             <p>
@@ -156,94 +152,6 @@
         </div>
       </section>
 
-      <section class="section alt-section" id="projects" aria-labelledby="projects-title">
-        <div class="container">
-          <div class="section-heading">
-            <p class="section-kicker">Projects</p>
-            <h2 id="projects-title">Selected Work</h2>
-          </div>
-          <div class="project-list">
-            <article class="project-card">
-              <div>
-                <p class="project-type">Ongoing PhD research</p>
-                <h3>Speech continuation as a probe of speech foundation models</h3>
-              </div>
-              <p>
-                Developing an evaluation framing for speech continuation that studies
-                demographic regularities, recording-condition robustness, and
-                signal-, latent-, and paralinguistic-level measures.
-              </p>
-              <p class="project-meta">
-                Identity-Aware AI LREC Workshop 2026 · arXiv:2509.22061
-              </p>
-              <a class="text-link" href="https://arxiv.org/abs/2509.22061">arXiv preprint</a>
-            </article>
-            <article class="project-card">
-              <div>
-                <p class="project-type">Voice-based bias evaluation</p>
-                <h3>The Voice Behind the Words</h3>
-              </div>
-              <p>
-                Quantifying intersectionality in SpeechLLMs by holding linguistic
-                content fixed while varying acoustic content such as accent and gender.
-              </p>
-              <a class="text-link" href="https://shreeharsha-bs.github.io/interspeech-voice-behind-words-website/">
-                Project page
-              </a>
-            </article>
-            <article class="project-card">
-              <div>
-                <p class="project-type">Human-AI speech interaction</p>
-                <h3>Walk a Mile in My Voice</h3>
-              </div>
-              <p>
-                Studying how voice conversion shapes trust, attribution, and empathy
-                in human-AI speech interactions when response content is held constant.
-              </p>
-              <p class="project-meta">
-                IUI Companion Posters and CHI Extended Abstracts Posters 2026.
-              </p>
-            </article>
-            <article class="project-card">
-              <div>
-                <p class="project-type">Speech robustness</p>
-                <h3>Converted and restored speech for deepfake detection</h3>
-              </div>
-              <p>
-                Examining whether deepfake detectors and speech representations
-                measure what we think they measure under conversion, restoration, and
-                other transformations.
-              </p>
-              <p class="project-meta">
-                arXiv:2603.14033 · submitted to Interspeech 2026.
-              </p>
-              <a class="text-link" href="https://arxiv.org/abs/2603.14033">arXiv preprint</a>
-            </article>
-            <article class="project-card">
-              <div>
-                <p class="project-type">Speech technology</p>
-                <h3>ASR for literacy assessments in India</h3>
-              </div>
-              <p>
-                Built automatic speech recognition models for literacy assessments in
-                India, with deployment context involving field use by an NGO.
-              </p>
-            </article>
-            <article class="project-card">
-              <div>
-                <p class="project-type">Applied AI</p>
-                <h3>Speech assessment, VAD, and LLM/RAG systems</h3>
-              </div>
-              <p>
-                Worked on speech assessment systems, voice activity detection, and
-                LLM/RAG solutions for aerospace repair-scheme creation, including work
-                reported to reduce repair engineers' writing time by 98%.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
       <section class="section" id="publications" aria-labelledby="publications-title">
         <div class="container">
           <p class="section-kicker">Publications</p>
@@ -260,9 +168,6 @@
                 <p class="pub-meta">Interspeech 2026 · Accepted · arXiv:2603.16941</p>
                 <p class="pub-links">
                   <a href="https://arxiv.org/abs/2603.16941">arXiv</a>
-                  <a href="https://shreeharsha-bs.github.io/interspeech-voice-behind-words-website/">
-                    Project page
-                  </a>
                 </p>
               </div>
             </li>
@@ -275,6 +180,9 @@
                   É Székely.
                 </p>
                 <p class="pub-meta">CHI Extended Abstracts 2026</p>
+                <p class="pub-links">
+                  <a href="https://arxiv.org/abs/2604.13067">arXiv</a>
+                </p>
               </div>
             </li>
             <li class="publication-item">
@@ -286,6 +194,11 @@
                   É Székely.
                 </p>
                 <p class="pub-meta">IUI Companion 2026</p>
+                <p class="pub-links">
+                  <a href="https://scholar.google.com/scholar?q=%22Walk+a+Mile+in+My+Voice%22+%22Voice+Conversion+Shapes+Trust%22">
+                    Google Scholar
+                  </a>
+                </p>
               </div>
             </li>
             <li class="publication-item">
@@ -305,6 +218,9 @@
                 <h3>Do Bias Benchmarks Generalise? Evidence from Voice-based Evaluation of Gender Bias in SpeechLLMs</h3>
                 <p>SH Bokkahalli Satish, GE Henter, É Székely.</p>
                 <p class="pub-meta">IEEE ICASSP 2026 · Accepted</p>
+                <p class="pub-links">
+                  <a href="https://arxiv.org/abs/2510.01254">arXiv</a>
+                </p>
               </div>
             </li>
             <li class="publication-item">
@@ -368,12 +284,24 @@
           </div>
           <ol class="timeline">
             <li>
-              <time>2018-2021</time>
+              <time>Current</time>
               <div>
-                <h3>Master's in Electrical Engineering, Signal Processing</h3>
+                <h3>PhD student</h3>
                 <p>
-                  Built ASR models for literacy assessments in India, later used in
-                  the field by an NGO.
+                  Researching enchronic speech dynamics using self-supervised learning
+                  and bias discovery/mitigation in conversational AI. Supervised by
+                  Éva Székely and Gustav Eje Henter at KTH Royal Institute of
+                  Technology, with support from WASP.
+                </p>
+              </div>
+            </li>
+            <li>
+              <time>Pre-PhD</time>
+              <div>
+                <h3>Speech and AI systems</h3>
+                <p>
+                  Worked on speech assessment systems, voice activity detection, and
+                  LLM/RAG solutions for aerospace repair-scheme creation.
                 </p>
               </div>
             </li>
@@ -388,24 +316,12 @@
               </div>
             </li>
             <li>
-              <time>Current</time>
+              <time>2018-2021</time>
               <div>
-                <h3>PhD student</h3>
+                <h3>Master's in Electrical Engineering, Signal Processing</h3>
                 <p>
-                  Researching enchronic speech dynamics using self-supervised learning
-                  and bias discovery/mitigation in conversational AI. Supervised by
-                  Éva Székely and Gustav Eje Henter at KTH Royal Institute of
-                  Technology, with support from WASP.
-                </p>
-              </div>
-            </li>
-            <li>
-              <time>Industry</time>
-              <div>
-                <h3>Speech and AI systems</h3>
-                <p>
-                  Worked on speech assessment systems, voice activity detection, and
-                  LLM/RAG solutions for aerospace repair-scheme creation.
+                  Built ASR models for literacy assessments in India, later used in
+                  the field by an NGO.
                 </p>
               </div>
             </li>
@@ -417,7 +333,7 @@
         <div class="container">
           <div class="section-heading">
             <p class="section-kicker">Interests</p>
-            <h2 id="interests-title">Topics I Keep Returning To</h2>
+            <h2 id="interests-title">Research Interests</h2>
           </div>
           <ul class="tag-list" aria-label="Research interests">
             <li>Signal Processing</li>
@@ -454,10 +370,6 @@
               </li>
               <li><a href="https://github.com/shreeharsha-bs" rel="me">GitHub</a></li>
               <li><a href="#publications">Publication list on this page</a></li>
-              <li>
-                KTH Royal Institute of Technology · verified kth.se profile on
-                Google Scholar
-              </li>
             </ul>
           </div>
         </div>

@@ -25,13 +25,12 @@ http://127.0.0.1:8000/
 
 - Main page content lives in `index.html`.
 - Visual styling lives in `styles.css`.
-- The hero image and favicon live in `assets/`.
+- The portrait image and favicon live in `assets/`.
 - Public links that are not supported by the source material should be added only
   when they are confirmed.
 
 ## Content Notes
 
 The site preserves only facts supported by the original README, the seminar deck,
-the public Google Scholar profile, the project page, or public arXiv records. It
-intentionally does not invent awards, CV links, LinkedIn, ORCID, or unverified
-contact details.
+the public Google Scholar profile, or public paper records. It intentionally does
+not invent awards, CV links, LinkedIn, ORCID, or unverified contact details.
