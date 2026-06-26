@@ -25,7 +25,7 @@ http://127.0.0.1:8000/
 
 - Main page content lives in `index.html`.
 - Visual styling lives in `styles.css`.
-- The portrait image and favicon live in `assets/`.
+- The backdrop, portrait image, and favicon live in `assets/`.
 - Public links that are not supported by the source material should be added only
   when they are confirmed.
 
