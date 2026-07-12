@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Shree Harsha | Speech Dynamics and Conversational AI</title>
+    <title>Shree Harsha | Conversational Speech Research</title>
     <meta
       name="description"
-      content="Shree Harsha Bokkahalli Satish is a PhD student researching speech interaction dynamics, SpeechLLM evaluation, and responsible conversational AI."
+      content="Shree Harsha Bokkahalli Satish researches conversational speech dynamics, full-duplex evaluation, SpeechLLMs, and responsible conversational AI."
     >
     <meta property="og:title" content="Shree Harsha | Speech Dynamics and Conversational AI">
     <meta
       property="og:description"
-      content="Academic portfolio for research on speech interaction dynamics, SpeechLLMs, voice-based bias evaluation, and responsible conversational AI."
+      content="Research portfolio on conversational speech dynamics, full-duplex evaluation, SpeechLLMs, voice-based bias evaluation, and responsible conversational AI."
     >
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://shreeharsha-bs.github.io/">
@@ -60,18 +60,17 @@
             <img src="assets/shree-harsha.jpg" alt="Portrait of Shree Harsha.">
           </figure>
           <div class="hero-copy">
-            <p class="eyebrow">PhD student · Speech technology · Conversational AI</p>
+            <p class="eyebrow">PhD researcher · Speech technology · Conversational AI</p>
             <h1 id="hero-title">Shree Harsha</h1>
             <p class="hero-lede">
-              I research speech interaction dynamics, SpeechLLM evaluation, and
-              responsible conversational AI.
+              I study what makes spoken interaction work—and how conversational AI
+              can be evaluated against it.
             </p>
             <p class="hero-note">
-              My current work studies enchronic speech dynamics with self-supervised
-              learning, voice-based bias evaluation, and failure modes in speech
-              foundation models. I am supervised by Éva Székely and Gustav Eje Henter,
-              supported by the WASP program, and based at KTH Royal Institute of
-              Technology.
+              My current work focuses on full-duplex conversational evaluation,
+              enchronic speech dynamics, voice-based bias, and failure modes in speech
+              foundation models. I am based at KTH Royal Institute of Technology and
+              supported by the WASP program.
             </p>
             <div class="cta-row" aria-label="Research links">
               <a href="#publications">Publications</a>
@@ -113,55 +112,75 @@
             <p class="section-kicker">Research</p>
             <h2 id="research-title">Current Directions</h2>
           </div>
-          <div class="card-grid">
-            <article class="info-card">
-              <h3>Enchronic Speech Dynamics</h3>
+          <div class="research-layout">
+            <article class="current-project">
+              <div class="project-copy">
+                <p class="project-label"><span>Current focus</span> JSALT 2026</p>
+                <h3>Evaluating full-duplex conversation as interaction</h3>
+                <p class="project-intro">
+                  I am developing evaluation methods for full-duplex conversational
+                  systems that use human-human conversation as the reference—not just
+                  isolated utterances or task scores.
+                </p>
+                <p>
+                  The work asks whether a few salient positive moments and longer
+                  stretches of conversational burden can explain how an interaction is
+                  remembered and rated. It connects turn-taking, responsiveness,
+                  entrainment, affect, and distributional speech metrics to
+                  participant-level judgements of conversational success.
+                </p>
+                <ul class="method-list" aria-label="JSALT research themes">
+                  <li>Full-duplex evaluation</li>
+                  <li>Salient moments</li>
+                  <li>Conversational burden</li>
+                  <li>Turn-taking &amp; entrainment</li>
+                </ul>
+              </div>
+              <div class="conversation-figure" aria-label="Abstract timeline comparing two speakers and salient conversational moments" role="img">
+                <div class="signal-head">
+                  <span>Human interaction trace</span>
+                  <span>12:48</span>
+                </div>
+                <div class="speaker-row">
+                  <span class="speaker">A</span>
+                  <span class="turn turn-a1"></span>
+                  <span class="turn turn-a2"></span>
+                  <span class="turn turn-a3"></span>
+                  <span class="turn turn-a4"></span>
+                </div>
+                <div class="speaker-row speaker-row-b">
+                  <span class="speaker">B</span>
+                  <span class="turn turn-b1"></span>
+                  <span class="turn turn-b2"></span>
+                  <span class="turn turn-b3"></span>
+                  <span class="turn turn-b4"></span>
+                </div>
+                <div class="moment-track" aria-hidden="true">
+                  <span class="moment moment-one"></span>
+                  <span class="moment moment-two"></span>
+                  <span class="moment moment-three"></span>
+                </div>
+                <div class="signal-legend">
+                  <span><i class="legend-dot positive"></i>salient moment</span>
+                  <span><i class="legend-dot burden"></i>sustained burden</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="direction-card">
+              <p class="direction-number">01</p>
+              <h3>Enchronic speech dynamics</h3>
               <p>
-                <strong>Problem.</strong> Conversation unfolds in real time, but many
-                speech systems treat utterances as isolated clips.
-              </p>
-              <p>
-                <strong>Why it matters.</strong> Timing, turn-taking, and shared
-                meaning are central to natural interaction and to conversational AI
-                that behaves responsibly.
-              </p>
-              <p>
-                <strong>Methods.</strong> Speech timing analysis, interaction-focused
-                modeling, and self-supervised representations of spoken audio.
+                Modelling the moment-by-moment timing, turn-taking, and coordination
+                through which people build meaning together.
               </p>
             </article>
-            <article class="info-card">
-              <h3>In-Situ Bias Evaluation</h3>
+            <article class="direction-card">
+              <p class="direction-number">02</p>
+              <h3>Responsible SpeechLLM evaluation</h3>
               <p>
-                <strong>Problem.</strong> Multiple-choice bias benchmarks can miss
-                how SpeechLLMs behave in open-ended, real-use settings.
-              </p>
-              <p>
-                <strong>Why it matters.</strong> Context-aware measurements are
-                needed when voice, accent, gender, and interaction style shape model
-                behavior.
-              </p>
-              <p>
-                <strong>Methods.</strong> Controlled acoustic variation, voice
-                conversion, long-form evaluation, LLM-as-a-judge methods, and human
-                preference validation.
-              </p>
-            </article>
-            <article class="info-card">
-              <h3>SpeechLLM Robustness and Failure Modes</h3>
-              <p>
-                <strong>Problem.</strong> Systems can appear strong on proxy tasks
-                while failing under transformations, restoration, conversion, or
-                out-of-distribution speech.
-              </p>
-              <p>
-                <strong>Why it matters.</strong> Robust speech AI needs evaluations
-                that reveal what models encode, what users perceive, and what
-                downstream classifiers actually measure.
-              </p>
-              <p>
-                <strong>Methods.</strong> Speech continuation probes, voice-conversion
-                studies, deepfake-detection stress tests, and representation analysis.
+                Revealing voice-based bias and robustness failures through controlled
+                variation, open-ended interaction, and human validation.
               </p>
             </article>
           </div>
@@ -170,125 +189,155 @@
 
       <section class="section" id="publications" aria-labelledby="publications-title">
         <div class="container">
-          <p class="section-kicker">Publications</p>
-          <h2 id="publications-title">Publications and Preprints</h2>
-          <ol class="publication-list">
-            <li class="publication-item">
-              <p class="pub-year">2026</p>
-              <div>
-                <h3>The Voice Behind the Words: Quantifying Intersectional Bias in SpeechLLMs</h3>
-                <p>
-                  SH Bokkahalli Satish, C Minixhofer, M Teleki, J Caverlee, O Klejch,
-                  P Bell, GE Henter, É Székely.
-                </p>
-                <p class="pub-meta">Interspeech 2026 · Accepted · arXiv:2603.16941</p>
-                <p class="pub-links">
-                  <a href="https://arxiv.org/abs/2603.16941">arXiv</a>
-                </p>
+          <div class="publications-heading">
+            <div>
+              <p class="section-kicker">Selected work</p>
+              <h2 id="publications-title">Research in view</h2>
+            </div>
+            <p>
+              Selected papers on voice-based bias, interactive evaluation, and
+              robustness in speech foundation models.
+            </p>
+          </div>
+
+          <div class="featured-publications">
+            <article class="featured-publication">
+              <figure class="paper-figure">
+                <img
+                  src="assets/papers/intersectional-helpfulness.webp"
+                  alt="Heatmap and interval plot comparing SpeechLLM helpfulness across accents, models, and gender."
+                  loading="lazy"
+                >
+                <figcaption>Helpfulness across accent × gender profiles</figcaption>
+              </figure>
+              <div class="featured-copy">
+                <p class="pub-meta">Interspeech 2026 · Accepted</p>
+                <h3><a href="https://arxiv.org/abs/2603.16941">The Voice Behind the Words</a></h3>
+                <p>Quantifying intersectional bias in SpeechLLMs.</p>
               </div>
-            </li>
-            <li class="publication-item">
-              <p class="pub-year">2026</p>
-              <div>
-                <h3>From Seeing it to Experiencing it: Interactive Evaluation of Intersectional Voice Bias in Human-AI Speech Interaction</h3>
-                <p>
-                  SH Bokkahalli Satish, M Teleki, C Minixhofer, O Klejch, P Bell,
-                  É Székely.
-                </p>
+            </article>
+
+            <article class="featured-publication">
+              <figure class="paper-figure">
+                <img
+                  src="assets/papers/interactive-study-design.webp"
+                  alt="Study design comparing observational, direct interactive, and voice-converted vicarious evaluation."
+                  loading="lazy"
+                >
+                <figcaption>Three positions for evaluating an AI interaction</figcaption>
+              </figure>
+              <div class="featured-copy">
                 <p class="pub-meta">CHI Extended Abstracts 2026</p>
-                <p class="pub-links">
-                  <a href="https://arxiv.org/abs/2604.13067">arXiv</a>
-                </p>
+                <h3><a href="https://arxiv.org/abs/2604.13067">From Seeing it to Experiencing it</a></h3>
+                <p>Interactive evaluation of intersectional voice bias.</p>
               </div>
-            </li>
-            <li class="publication-item">
-              <p class="pub-year">2026</p>
-              <div>
-                <h3>“Walk a Mile in My Voice”: Voice Conversion Shapes Trust, Attribution, and Empathy in Human-AI Speech Interactions</h3>
-                <p>
-                  SH Bokkahalli Satish, M Teleki, C Minixhofer, O Klejch, P Bell,
-                  É Székely.
-                </p>
-                <p class="pub-meta">IUI Companion 2026</p>
-                <p class="pub-links">
-                  <a href="https://scholar.google.com/scholar?q=%22Walk+a+Mile+in+My+Voice%22+%22Voice+Conversion+Shapes+Trust%22">
-                    Google Scholar
-                  </a>
-                </p>
+            </article>
+
+            <article class="featured-publication">
+              <figure class="paper-figure">
+                <img
+                  src="assets/papers/deepfake-embedding-shifts.webp"
+                  alt="t-SNE scatter plot and bar chart showing embedding shifts after voice quality conversion."
+                  loading="lazy"
+                >
+                <figcaption>Representation shifts after voice conversion</figcaption>
+              </figure>
+              <div class="featured-copy">
+                <p class="pub-meta">Interspeech 2026 · Submitted</p>
+                <h3><a href="https://arxiv.org/abs/2603.14033">What Counts as Real?</a></h3>
+                <p>New challenges for deepfake detection under speech restoration and voice-quality conversion.</p>
               </div>
-            </li>
-            <li class="publication-item">
-              <p class="pub-year">2026</p>
-              <div>
-                <h3>What Counts as Real? Speech Restoration and Voice Quality Conversion Pose New Challenges to Deepfake Detection</h3>
-                <p>SH Bokkahalli Satish, H Lameris, J Gustafson, É Székely.</p>
-                <p class="pub-meta">arXiv:2603.14033 · Submitted to Interspeech 2026</p>
-                <p class="pub-links">
-                  <a href="https://arxiv.org/abs/2603.14033">arXiv</a>
-                </p>
+            </article>
+
+            <article class="featured-publication">
+              <figure class="paper-figure">
+                <img
+                  src="assets/papers/speech-continuation-framework.webp"
+                  alt="Pipeline from speech prompts through model continuation and multi-part bias assessment."
+                  loading="lazy"
+                >
+                <figcaption>Speech continuation evaluation framework</figcaption>
+              </figure>
+              <div class="featured-copy">
+                <p class="pub-meta">Identity-Aware AI · LREC 2026</p>
+                <h3><a href="https://arxiv.org/abs/2509.22061">Speak Your Mind</a></h3>
+                <p>The speech continuation task as a probe of voice-based model bias.</p>
               </div>
-            </li>
-            <li class="publication-item">
-              <p class="pub-year">2026</p>
-              <div>
-                <h3>Do Bias Benchmarks Generalise? Evidence from Voice-based Evaluation of Gender Bias in SpeechLLMs</h3>
-                <p>SH Bokkahalli Satish, GE Henter, É Székely.</p>
+            </article>
+
+            <article class="featured-publication featured-publication-wide">
+              <figure class="paper-figure">
+                <img
+                  src="assets/papers/bias-benchmarks-transfer.webp"
+                  alt="Two SpeechLLM examples showing that unbiased multiple-choice behaviour does not consistently transfer to long-form advice."
+                  width="1400"
+                  height="1005"
+                  loading="lazy"
+                >
+                <figcaption>Benchmark behaviour versus long-form generation</figcaption>
+              </figure>
+              <div class="featured-copy">
                 <p class="pub-meta">IEEE ICASSP 2026 · Accepted</p>
-                <p class="pub-links">
-                  <a href="https://arxiv.org/abs/2510.01254">arXiv</a>
+                <h3><a href="https://arxiv.org/abs/2510.01254">Do Bias Benchmarks Generalise?</a></h3>
+                <p>
+                  Evidence from voice-based evaluation of gender bias in SpeechLLMs,
+                  testing whether benchmark behaviour transfers to open-ended tasks.
                 </p>
               </div>
-            </li>
-            <li class="publication-item">
-              <p class="pub-year">2026</p>
-              <div>
-                <h3>Speak Your Mind: The Speech Continuation Task as a Probe of Voice-Based Model Bias</h3>
-                <p>SH Bokkahalli Satish, H Lameris, O Perrotin, GE Henter, É Székely.</p>
-                <p class="pub-meta">Identity-Aware AI LREC Workshop 2026 · Accepted · arXiv:2509.22061</p>
-                <p class="pub-links">
-                  <a href="https://arxiv.org/abs/2509.22061">arXiv</a>
-                </p>
-              </div>
-            </li>
-            <li class="publication-item">
-              <p class="pub-year">2025</p>
-              <div>
-                <h3>Lost in Phonation: Voice Quality Variation as an Evaluation Dimension for Speech Foundation Models</h3>
-                <p>H Lameris, SH Bokkahalli Satish, J Gustafson, É Székely.</p>
-                <p class="pub-meta">arXiv:2510.25577 · Submitted to LREC 2026</p>
-                <p class="pub-links">
-                  <a href="https://arxiv.org/abs/2510.25577">arXiv</a>
-                </p>
-              </div>
-            </li>
-            <li class="publication-item">
-              <p class="pub-year">2025</p>
-              <div>
-                <h3>When Voice Matters: Evidence of Gender Disparity in Positional Bias of SpeechLLMs</h3>
-                <p>SH Bokkahalli Satish, GE Henter, É Székely.</p>
-                <p class="pub-meta">SPECOM 2025 · Published</p>
-              </div>
-            </li>
-            <li class="publication-item">
-              <p class="pub-year">2025</p>
-              <div>
-                <h3>Hear Me Out: Interactive Evaluation and Bias Discovery Platform for Speech-to-Speech Conversational AI</h3>
-                <p>SH Bokkahalli Satish, GE Henter, É Székely.</p>
-                <p class="pub-meta">Interspeech 2025 Show and Tell/Demo · Published</p>
-              </div>
-            </li>
-            <li class="publication-item">
-              <p class="pub-year">2021</p>
-              <div>
-                <h3>Predicting Lexical Skills from Oral Reading with Acoustic Measures</h3>
-                <p>SH Bokkahalli Satish, C Vitthal, K Sabu, P Rao.</p>
-                <p class="pub-meta">arXiv:2112.00635</p>
-                <p class="pub-links">
-                  <a href="https://arxiv.org/abs/2112.00635">arXiv</a>
-                </p>
-              </div>
-            </li>
-          </ol>
+            </article>
+          </div>
+
+          <div class="more-publications">
+            <div class="more-publications-heading">
+              <p class="section-kicker">Also published</p>
+              <h3>More publications</h3>
+            </div>
+            <ol class="publication-list">
+              <li class="publication-item">
+                <p class="pub-year">2026</p>
+                <div>
+                  <h3>“Walk a Mile in My Voice”: Voice Conversion Shapes Trust, Attribution, and Empathy in Human-AI Speech Interactions</h3>
+                  <p>SH Bokkahalli Satish, M Teleki, C Minixhofer, O Klejch, P Bell, É Székely.</p>
+                  <p class="pub-meta">IUI Companion 2026</p>
+                  <p class="pub-links"><a href="https://scholar.google.com/scholar?q=%22Walk+a+Mile+in+My+Voice%22+%22Voice+Conversion+Shapes+Trust%22">Google Scholar</a></p>
+                </div>
+              </li>
+              <li class="publication-item">
+                <p class="pub-year">2025</p>
+                <div>
+                  <h3>Lost in Phonation: Voice Quality Variation as an Evaluation Dimension for Speech Foundation Models</h3>
+                  <p>H Lameris, SH Bokkahalli Satish, J Gustafson, É Székely.</p>
+                  <p class="pub-meta">arXiv:2510.25577 · Submitted to LREC 2026</p>
+                  <p class="pub-links"><a href="https://arxiv.org/abs/2510.25577">arXiv</a></p>
+                </div>
+              </li>
+              <li class="publication-item">
+                <p class="pub-year">2025</p>
+                <div>
+                  <h3>When Voice Matters: Evidence of Gender Disparity in Positional Bias of SpeechLLMs</h3>
+                  <p>SH Bokkahalli Satish, GE Henter, É Székely.</p>
+                  <p class="pub-meta">SPECOM 2025 · Published</p>
+                </div>
+              </li>
+              <li class="publication-item">
+                <p class="pub-year">2025</p>
+                <div>
+                  <h3>Hear Me Out: Interactive Evaluation and Bias Discovery Platform for Speech-to-Speech Conversational AI</h3>
+                  <p>SH Bokkahalli Satish, GE Henter, É Székely.</p>
+                  <p class="pub-meta">Interspeech 2025 Show and Tell/Demo · Published</p>
+                </div>
+              </li>
+              <li class="publication-item">
+                <p class="pub-year">2021</p>
+                <div>
+                  <h3>Predicting Lexical Skills from Oral Reading with Acoustic Measures</h3>
+                  <p>SH Bokkahalli Satish, C Vitthal, K Sabu, P Rao.</p>
+                  <p class="pub-meta">arXiv:2112.00635</p>
+                  <p class="pub-links"><a href="https://arxiv.org/abs/2112.00635">arXiv</a></p>
+                </div>
+              </li>
+            </ol>
+          </div>
         </div>
       </section>
 
