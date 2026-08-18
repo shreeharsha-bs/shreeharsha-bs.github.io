@@ -152,12 +152,29 @@ button:focus-visible,
 }
 
 .hero {
+  position: relative;
   background:
     linear-gradient(90deg, rgba(248, 250, 252, 0.78) 0%, rgba(248, 250, 252, 0.58) 58%, rgba(248, 250, 252, 0.2) 100%),
     linear-gradient(0deg, rgba(248, 250, 252, 0.28), rgba(248, 250, 252, 0.06)),
     url("assets/hero-backdrop.jpg") center / cover no-repeat;
   border-bottom: 1px solid var(--line);
   color: var(--ink);
+}
+
+.hero-photo-credit {
+  position: absolute;
+  right: max(20px, calc((100vw - 1120px) / 2));
+  bottom: 12px;
+  margin: 0;
+  padding: 4px 8px;
+  border-radius: 5px;
+  background: rgba(248, 250, 252, 0.72);
+  color: rgba(16, 32, 51, 0.76);
+  font-size: 0.68rem;
+  font-weight: 650;
+  letter-spacing: 0.02em;
+  line-height: 1.35;
+  backdrop-filter: blur(5px);
 }
 
 .hero-content {
@@ -869,6 +886,12 @@ h3 {
   .hero-content {
     display: block;
     padding: 34px 0 40px;
+  }
+
+  .hero-photo-credit {
+    right: 14px;
+    bottom: 8px;
+    font-size: 0.62rem;
   }
 
   .hero-content::after {
