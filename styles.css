@@ -790,24 +790,6 @@ h3 {
   margin: 0;
 }
 
-.tag-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.tag-list li {
-  padding: 10px 14px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: #fff;
-  color: var(--teal-dark);
-  font-weight: 800;
-}
-
 .contact-section {
   border-top: 1px solid var(--line);
   background: var(--surface-alt);
