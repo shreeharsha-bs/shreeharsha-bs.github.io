@@ -778,30 +778,10 @@ h3 {
   font-size: 1.04rem;
 }
 
-.teaching-summary {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px 42px;
-  margin: 0;
-  color: var(--muted);
-}
-
-.teaching-summary span {
-  flex: 1 1 420px;
-}
-
-.teaching-summary strong {
-  color: var(--ink-strong);
-}
-
 .student-work-heading {
-  margin: 58px 0 18px;
+  margin: 0 0 18px;
   padding-bottom: 16px;
   border-bottom: 1px solid var(--ink);
-}
-
-.student-work-heading .section-kicker {
-  margin-bottom: 7px;
 }
 
 .student-work-heading h3 {
