@@ -756,6 +756,127 @@ h3 {
   font-weight: 900;
 }
 
+.teaching-section {
+  border-top: 1px solid var(--line);
+  background:
+    linear-gradient(135deg, rgba(237, 244, 241, 0.66), rgba(248, 250, 252, 0.9)),
+    var(--paper);
+}
+
+.teaching-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.75fr);
+  gap: 48px;
+  align-items: end;
+  margin-bottom: 38px;
+}
+
+.teaching-heading > p {
+  max-width: 520px;
+  margin: 0 0 4px;
+  color: var(--muted);
+  font-size: 1.04rem;
+}
+
+.teaching-overview {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.teaching-card {
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: var(--shadow-soft);
+}
+
+.teaching-card-label {
+  margin: 0 0 22px;
+  color: var(--gold);
+  font-size: 0.74rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.teaching-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.35rem;
+}
+
+.teaching-card p:last-child {
+  margin: 0;
+  color: var(--muted);
+}
+
+.student-work-heading {
+  margin: 58px 0 18px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--ink);
+}
+
+.student-work-heading .section-kicker {
+  margin-bottom: 7px;
+}
+
+.student-work-heading h3 {
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.student-work-list {
+  display: grid;
+}
+
+.student-work-item {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 32px;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.student-work-item h3 {
+  max-width: 800px;
+  margin-bottom: 8px;
+  font-size: 1.22rem;
+}
+
+.student-work-item p {
+  max-width: 800px;
+  margin: 0;
+  color: var(--muted);
+}
+
+.student-work-item .student-authors {
+  margin-bottom: 10px;
+  color: var(--teal-dark);
+  font-size: 0.93rem;
+  font-weight: 750;
+}
+
+.student-work-meta p {
+  margin: 0 0 8px;
+  color: var(--gold);
+  font-size: 0.78rem;
+  font-weight: 850;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+}
+
+.student-work-meta span {
+  display: inline-flex;
+  padding: 5px 8px;
+  border-radius: 999px;
+  background: var(--teal-soft);
+  color: var(--teal-dark);
+  font-size: 0.72rem;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
 .timeline {
   display: grid;
   gap: 18px;
@@ -846,6 +967,11 @@ h3 {
     gap: 18px;
   }
 
+  .teaching-heading {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
   .section {
     padding: 72px 0;
   }
@@ -921,8 +1047,14 @@ h3 {
   }
 
   .research-layout,
-  .featured-publications {
+  .featured-publications,
+  .teaching-overview {
     grid-template-columns: 1fr;
+  }
+
+  .student-work-item {
+    grid-template-columns: 1fr;
+    gap: 12px;
   }
 
   .featured-publication-wide {
