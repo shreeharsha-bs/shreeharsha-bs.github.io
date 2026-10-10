@@ -35,7 +35,7 @@
       }
     </script>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="styles.css?v=20261010">
+    <link rel="stylesheet" href="styles.css?v=20261010-2">
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to main content</a>
@@ -165,17 +165,22 @@
                 Selected papers on conversational evaluation, voice-based bias, and
                 robustness in speech foundation models.
               </p>
-              <p class="scroll-instruction" id="papers-scroll-instruction">
-                Scroll horizontally to view all papers <span aria-hidden="true">→</span>
-              </p>
+              <button
+                class="papers-next"
+                type="button"
+                aria-label="Show next paper"
+                aria-controls="research-paper-strip"
+              >
+                <span aria-hidden="true">→</span>
+              </button>
             </div>
           </div>
 
           <div
+            id="research-paper-strip"
             class="featured-publications"
             role="region"
             aria-label="Selected research papers"
-            aria-describedby="papers-scroll-instruction"
             tabindex="0"
           >
             <article class="featured-publication">
@@ -452,5 +457,47 @@
         </div>
       </section>
     </main>
+    <script>
+      (() => {
+        const strip = document.querySelector(".featured-publications");
+        const nextButton = document.querySelector(".papers-next");
+
+        if (!strip || !nextButton) return;
+
+        const cards = Array.from(strip.querySelectorAll(".featured-publication"));
+        const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+        const updateButton = () => {
+          const atEnd = strip.scrollLeft + strip.clientWidth >= strip.scrollWidth - 4;
+          nextButton.disabled = atEnd;
+          nextButton.setAttribute(
+            "aria-label",
+            atEnd ? "End of paper list" : "Show next paper"
+          );
+        };
+
+        const showNextPaper = () => {
+          const stripLeft = strip.getBoundingClientRect().left;
+          const nextCard = cards.find(
+            (card) => card.getBoundingClientRect().left > stripLeft + 8
+          );
+
+          if (!nextCard) return;
+
+          const nextLeft =
+            strip.scrollLeft + nextCard.getBoundingClientRect().left - stripLeft;
+
+          strip.scrollTo({
+            left: nextLeft,
+            behavior: reducedMotion.matches ? "auto" : "smooth"
+          });
+        };
+
+        nextButton.addEventListener("click", showNextPaper);
+        strip.addEventListener("scroll", updateButton, { passive: true });
+        window.addEventListener("resize", updateButton);
+        updateButton();
+      })();
+    </script>
   </body>
 </html>
