@@ -35,7 +35,7 @@
       }
     </script>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="styles.css?v=20260920">
+    <link rel="stylesheet" href="styles.css?v=20261010">
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to main content</a>
@@ -48,7 +48,7 @@
           <a href="#publications">Research</a>
           <a href="#teaching">Teaching</a>
           <a href="#background">Background</a>
-          <a href="assets/Shree_Harsha_CV.pdf" target="_blank" rel="noopener">CV</a>
+          <a href="assets/Shree_Harsha_CV.pdf?v=20261010" target="_blank" rel="noopener">CV</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
@@ -85,7 +85,7 @@
                 Google Scholar
               </a>
               <a href="https://github.com/shreeharsha-bs" rel="me">GitHub</a>
-              <a href="assets/Shree_Harsha_CV.pdf" target="_blank" rel="noopener">CV</a>
+              <a href="assets/Shree_Harsha_CV.pdf?v=20261010" target="_blank" rel="noopener">CV</a>
             </div>
           </div>
         </div>
@@ -160,13 +160,74 @@
               <p class="section-kicker">Selected work</p>
               <h2 id="publications-title">Research in view</h2>
             </div>
-            <p>
-              Selected papers on voice-based bias, interactive evaluation, and
-              robustness in speech foundation models.
-            </p>
+            <div class="publications-summary">
+              <p>
+                Selected papers on conversational evaluation, voice-based bias, and
+                robustness in speech foundation models.
+              </p>
+              <p class="scroll-instruction" id="papers-scroll-instruction">
+                Scroll horizontally to view all papers <span aria-hidden="true">→</span>
+              </p>
+            </div>
           </div>
 
-          <div class="featured-publications">
+          <div
+            class="featured-publications"
+            role="region"
+            aria-label="Selected research papers"
+            aria-describedby="papers-scroll-instruction"
+            tabindex="0"
+          >
+            <article class="featured-publication">
+              <figure class="paper-figure">
+                <img
+                  src="assets/papers/distributional-conversation-cds.webp"
+                  alt="Phone-rate Conversational Distribution Scores for high- and low-success human conversations, human-human conversations, human-AI conversations, and AI-AI conversations."
+                  width="813"
+                  height="671"
+                  loading="lazy"
+                >
+                <figcaption>Phone-rate CDS across conversation types</figcaption>
+              </figure>
+              <div class="featured-copy">
+                <p class="pub-meta">Submitted to IEEE ICASSP 2027</p>
+                <h3>
+                  <a href="https://arxiv.org/abs/2609.31719">
+                    Distributional Metrics for Evaluating Spoken Conversational Systems
+                  </a>
+                </h3>
+                <p>
+                  Comparing pace, rhythm, and turn interaction with human reference
+                  conversations through the Conversational Distribution Score.
+                </p>
+              </div>
+            </article>
+
+            <article class="featured-publication">
+              <figure class="paper-figure">
+                <img
+                  src="assets/papers/llm-judge-calibration.webp"
+                  alt="Raw score distributions from several LLM judges differ, while their calibrated score distributions align more closely with human scores."
+                  width="1260"
+                  height="450"
+                  loading="lazy"
+                >
+                <figcaption>Raw and calibrated judge-score distributions</figcaption>
+              </figure>
+              <div class="featured-copy">
+                <p class="pub-meta">arXiv 2026 · Preprint</p>
+                <h3>
+                  <a href="https://arxiv.org/abs/2609.29431">
+                    Calibrating LLM Judges for Human and AI Conversations
+                  </a>
+                </h3>
+                <p>
+                  Mapping different LLM judges onto a shared scale and testing them on
+                  200 human–AI and human–agent conversations.
+                </p>
+              </div>
+            </article>
+
             <article class="featured-publication">
               <figure class="paper-figure">
                 <img
@@ -209,7 +270,7 @@
                 <figcaption>Representation shifts after voice conversion</figcaption>
               </figure>
               <div class="featured-copy">
-                <p class="pub-meta">Interspeech 2026 · Submitted</p>
+                <p class="pub-meta">ISSMAD 2026 · Accepted presentation</p>
                 <h3><a href="https://arxiv.org/abs/2603.14033">What Counts as Real?</a></h3>
                 <p>New challenges for deepfake detection under speech restoration and voice-quality conversion.</p>
               </div>
@@ -231,7 +292,7 @@
               </div>
             </article>
 
-            <article class="featured-publication featured-publication-wide">
+            <article class="featured-publication">
               <figure class="paper-figure">
                 <img
                   src="assets/papers/bias-benchmarks-transfer.webp"
